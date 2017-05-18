@@ -1523,11 +1523,11 @@ body {
 	background-position: center center;
 }
 
-.site-content .wrap {
-	padding : 50px;
-	margin-bottom: 30px;
-	background-color: rgba( 0, 0, 0, 0.4)
-}
+/*.site-content .wrap {*/
+	/*padding : 50px;*/
+	/*margin-bottom: 30px;*/
+	/*background-color: rgba( 0, 0, 0, 0.4)*/
+/*}*/
 
 .wrap {
 	margin-left: auto;
@@ -3399,14 +3399,22 @@ object {
 	}
 
 	.navigation-top .wrap {
-		max-width: 1000px;
+		max-width: 1200px;
 		/* The font size is 14px here and we need 50px padding in ems */
-		padding: 0.75em 3.4166666666667em;
+		padding: 0.75em 3.25em;
 	}
 
 	.navigation-top nav {
 		margin-left: -1.25em;
 	}
+
+    .navigation-top .logo{
+        float: left;
+    }
+
+    .navigation-top .menu-item{
+        float: right;
+    }
 
 	.site-navigation-fixed.navigation-top {
 		bottom: auto;

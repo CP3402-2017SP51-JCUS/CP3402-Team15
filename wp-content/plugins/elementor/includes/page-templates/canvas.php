@@ -12,6 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		<?php endif; ?>
 		<?php wp_head(); ?>
 	</head>
+	<?php get_header(); ?>
 	<body <?php body_class(); ?>>
 	<?php
 	do_action( 'elementor/page_templates/canvas/before_content' );
@@ -23,4 +24,5 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	wp_footer();
 	?>
 	</body>
+	<?php get_footer(); ?>
 </html>

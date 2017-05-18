@@ -28,12 +28,17 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
-
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
 			<div class="navigation-top">
 				<div class="wrap">
-					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+					<div class="logo">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+							<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-small.png" alt="Logo" width="300" height="41" />
+						</a>
+					</div><!-- .logo -->
+					<div class="menu-item">
+						<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+					</div><!-- .menu-item -->
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
 		<?php endif; ?>

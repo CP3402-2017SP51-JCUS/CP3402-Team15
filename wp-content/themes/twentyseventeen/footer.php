@@ -33,10 +33,8 @@
 							) );
 						?>
 					</nav><!-- .social-navigation -->
-				<?php endif;
-
-				get_template_part( 'template-parts/footer/site', 'info' );
-				?>
+                <?php endif; ?>
+                    <p style="margin:10px 0; text-align=right">&copy 2017 BCS Sport. All Rights Reserved</p>
 			</div><!-- .wrap -->
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->

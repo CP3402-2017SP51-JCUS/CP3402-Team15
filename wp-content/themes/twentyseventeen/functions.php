@@ -526,6 +526,16 @@ function twentyseventeen_post_thumbnail_sizes_attr( $attr, $attachment, $size ) 
 }
 add_filter( 'wp_get_attachment_image_attributes', 'twentyseventeen_post_thumbnail_sizes_attr', 10, 3 );
 
+// WOOCOMMERCE FUNCTIONS
+function functions4woo()
+{
+    // Here we load from our includes directory
+    // This considers parent and child themes as well
+    locate_template( array( 'functions4woo.php' ), true, true );
+}
+add_action( 'after_setup_theme', 'functions4woo' );
+// END WOOCOMMERCE FUNCTIONS
+
 /**
  * Use front-page.php when Front page displays is set to a static page.
  *
