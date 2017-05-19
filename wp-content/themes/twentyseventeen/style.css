@@ -1516,12 +1516,12 @@ body {
 	word-wrap: break-word;
 }
 
-.site-content {
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center center;
-}
+/*.site-content {*/
+	/*background-repeat: no-repeat;*/
+	/*background-attachment: fixed;*/
+	/*background-size: cover;*/
+	/*background-position: center center;*/
+/*}*/
 
 /*.site-content .wrap {*/
 	/*padding : 50px;*/
@@ -3412,9 +3412,9 @@ object {
         float: left;
     }
 
-    .navigation-top .menu-item{
-        float: right;
-    }
+	.navigation-top .menu-item{
+		float: left;
+	}
 
 	.site-navigation-fixed.navigation-top {
 		bottom: auto;

@@ -22,7 +22,7 @@ function jk_change_breadcrumb_home_text( $defaults ) {
 // Change the home breadcrumb URL
 add_filter( 'woocommerce_breadcrumb_home_url', 'woo_custom_breadrumb_home_url' );
 function woo_custom_breadrumb_home_url() {
-    return 'http://localhost/wp/shop-categories';
+    return 'http://localhost/wp/shop';
 }
 
 // Change the breadcrumb delimiter from '/' to '>'
@@ -32,6 +32,12 @@ function jk_change_breadcrumb_delimiter( $defaults ) {
     return $defaults;
 }
 
-
 // Display 20 products per page
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 20;' ), 20 );
+
+// Remove "Select options" button from (variable) products on the main WooCommerce shop page.
+add_action( 'woocommerce_after_shop_loop_item', 'remove_add_to_cart_buttons', 1 );
+
+function remove_add_to_cart_buttons() {
+    remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart' );
+}

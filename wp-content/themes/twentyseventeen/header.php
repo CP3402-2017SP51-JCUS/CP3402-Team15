@@ -38,7 +38,7 @@
 					</div><!-- .logo -->
 					<div class="menu-item">
 						<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
-					</div><!-- .menu-item -->
+                        <!-- .menu-item -->
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
 		<?php endif; ?>
